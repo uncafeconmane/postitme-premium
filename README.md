@@ -1,12 +1,17 @@
-# PostitME · Corcho y clay 3D
+# PostitME · Rendimiento 1.0.2
 
-Versión 1.0.1 (2). Tablero con marco y textura de corcho, notas adhesivas con relieve, sombras y esquinas dobladas, e iconos grandes. Se conservan las 12 posiciones (4×3), las vistas 1–6 y 7–12, la edición y los datos locales.
+Versión 1.0.2 (3). Se conservan el corcho, las notas clay 3D, las 12 posiciones y las vistas 1–6 y 7–12.
 
-Web/PWA: https://uncafeconmane.github.io/postitme-premium/
+Web: https://uncafeconmane.github.io/postitme-premium/
+
 Aplicación: https://uncafeconmane.github.io/postitme-premium/app/
 
-La publicación se realiza manualmente en GitHub Pages. Esta versión sigue funcionando en modo local, sin registro, pagos, analítica ni sincronización remota activa. Los textos legales incluyen los datos completos facilitados por el titular.
+- El JavaScript inicial pasa de 4.733.048 a 3.850.131 bytes; el módulo PDF se carga al exportar y se incluye en la instalación offline.
+- La instalación offline descarga un solo motor gráfico: 12,75 MiB en Chromium o 14,07 MiB con el motor completo, frente a 19,6 MiB. Tamaños sin compresión.
+- Con 1.000 notas, la prueba del tablero pasa de 58 recorridos de colección a 2 al abrir; cambiar de vista o página no repite el filtrado.
+- Textura estática aislada, dibujo por lotes, vistas previas de texto limitadas sin modificar las notas, miniaturas y animaciones más ligeras.
+- 36 pruebas Flutter aprobadas; ocho páginas públicas y 109 enlaces internos comprobados; pruebas de ambos motores offline, PDF diferido, navegación, aislamiento de datos y actualización fallida.
 
-Validación visual y funcional: 8 pruebas de tablero aprobadas, incluyendo 320×568, 390×844, 768×1024, 1366×900 y 844×390; ciclo de vistas, acciones, edición y restauración. Se mantienen las comprobaciones del worker offline y enlaces internos del sitio.
+La web permanece en modo local, sin cuentas, pagos, analítica ni sincronización remota activa. Las notas existentes conservan su formato y cifrado. Para recibir una actualización pendiente, cerrar todas las pestañas y ventanas instaladas de PostitME y volver a abrir. No borrar los datos del navegador.
 
-Los veinte logos propuestos se entregan al titular para elegir. La selección definitiva aún no se ha aplicado al favicon o icono del lanzador.
+Las cifras de tamaño y recorridos no son mediciones de FPS ni de velocidad en móviles físicos. Cámara, micrófono, biometría, notificaciones y Safari/iOS requieren pruebas en dispositivos reales. La aplicación iOS necesita compilación y firma en macOS.
