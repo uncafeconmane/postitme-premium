@@ -1,20 +1,12 @@
-# PostitME
+# PostitME · Corcho y clay 3D
 
-Aplicación de notas adhesivas digitales, con tablero 4×3 y vistas ampliadas de seis notas. Esta entrega funciona en modo local: sin registro, sincronización remota, publicidad ni analítica incorporada.
+Versión 1.0.1 (2). Tablero con marco y textura de corcho, notas adhesivas con relieve, sombras y esquinas dobladas, e iconos grandes. Se conservan las 12 posiciones (4×3), las vistas 1–6 y 7–12, la edición y los datos locales.
 
-## Web de prueba
+Web/PWA: https://uncafeconmane.github.io/postitme-premium/
+Aplicación: https://uncafeconmane.github.io/postitme-premium/app/
 
-Este repositorio contiene [la web/PWA compilada](PostitME_PWA.zip) preparada para GitHub Pages. La publicación se realiza con un workflow manual y sin permisos de escritura sobre el código.
+La publicación se realiza manualmente en GitHub Pages. Esta versión sigue funcionando en modo local, sin registro, pagos, analítica ni sincronización remota activa. Los textos legales incluyen los datos completos facilitados por el titular.
 
-Los textos incluyen aviso legal, condiciones, privacidad y política de almacenamiento local. Contacto indicado por el titular del proyecto: +34 692 225 392. La identificación del titular, el domicilio de Badajoz, el NIF y el correo público se han incorporado al aviso legal con los datos facilitados por el titular. Los textos legales describen la versión local actual; no constituyen una certificación jurídica.
+Validación visual y funcional: 8 pruebas de tablero aprobadas, incluyendo 320×568, 390×844, 768×1024, 1366×900 y 844×390; ciclo de vistas, acciones, edición y restauración. Se mantienen las comprobaciones del worker offline y enlaces internos del sitio.
 
-El paquete contiene únicamente archivos públicos del sitio. No incluye notas de usuarios, contraseñas, claves de firma Android ni credenciales administrativas.
-
-## Verificaciones
-
-- Compilación web release y análisis Flutter aprobados.
-- 30 pruebas Flutter aprobadas.
-- 116 enlaces internos del sitio comprobados.
-- Recursos locales y comportamiento del service worker comprobados automáticamente, incluida la exclusión de peticiones de autenticación y escritura.
-
-El funcionamiento con cámara, micrófono, notificaciones y biometría necesita validación en dispositivos reales. La PWA requiere una primera descarga completa con conexión para abrir sin internet. Exporta copias antes de borrar datos del navegador.
+Los veinte logos propuestos se entregan al titular para elegir. La selección definitiva aún no se ha aplicado al favicon o icono del lanzador.
