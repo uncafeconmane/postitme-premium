@@ -1,0 +1,36 @@
+name: Publish PostitME manually
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: postitme-pages
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Unpack reviewed website
+        run: unzip -q PostitME_PWA.zip -d dist
+      - name: Check website files
+        run: |
+          test -f dist/index.html
+          test -f dist/app/main.dart.js
+          test -f dist/aviso-legal/index.html
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publish website
+        id: deployment
+        uses: actions/deploy-pages@v4
