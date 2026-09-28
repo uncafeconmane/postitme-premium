@@ -6,7 +6,7 @@ Aplicación de notas adhesivas digitales, con tablero 4×3 y vistas ampliadas de
 
 Este repositorio contiene [la web/PWA compilada](PostitME_PWA.zip) preparada para GitHub Pages. La publicación se realiza con un workflow manual y sin permisos de escritura sobre el código.
 
-Los textos incluyen aviso legal, condiciones, privacidad y política de almacenamiento local. Contacto indicado por el titular del proyecto: +34 692 225 392. Falta incorporar la identificación legal completa del titular; la web se presenta como versión de prueba y no se declara un cumplimiento legal íntegro.
+Los textos incluyen aviso legal, condiciones, privacidad y política de almacenamiento local. Contacto indicado por el titular del proyecto: +34 692 225 392. La identificación del titular, el domicilio de Badajoz, el NIF y el correo público se han incorporado al aviso legal con los datos facilitados por el titular. Los textos legales describen la versión local actual; no constituyen una certificación jurídica.
 
 El paquete contiene únicamente archivos públicos del sitio. No incluye notas de usuarios, contraseñas, claves de firma Android ni credenciales administrativas.
 
